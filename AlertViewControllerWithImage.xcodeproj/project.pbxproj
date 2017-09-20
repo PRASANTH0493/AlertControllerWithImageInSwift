@@ -14,6 +14,8 @@
 		838912741F728FDB004E29F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838912721F728FDB004E29F2 /* LaunchScreen.storyboard */; };
 		8389127F1F728FDB004E29F2 /* AlertViewControllerWithImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389127E1F728FDB004E29F2 /* AlertViewControllerWithImageTests.swift */; };
 		8389128A1F728FDB004E29F2 /* AlertViewControllerWithImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838912891F728FDB004E29F2 /* AlertViewControllerWithImageUITests.swift */; };
+		838912981F729040004E29F2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838912971F729040004E29F2 /* UIImage+Resize.swift */; };
+		8389129B1F7292FC004E29F2 /* AlertController+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389129A1F7292FC004E29F2 /* AlertController+Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		838912851F728FDB004E29F2 /* AlertViewControllerWithImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertViewControllerWithImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838912891F728FDB004E29F2 /* AlertViewControllerWithImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerWithImageUITests.swift; sourceTree = "<group>"; };
 		8389128B1F728FDB004E29F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838912971F729040004E29F2 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Resize.swift"; path = "../UIImage+Resize.swift"; sourceTree = "<group>"; };
+		8389129A1F7292FC004E29F2 /* AlertController+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		838912681F728FDB004E29F2 /* AlertViewControllerWithImage */ = {
 			isa = PBXGroup;
 			children = (
+				838912991F7292E9004E29F2 /* Extensions */,
 				838912691F728FDB004E29F2 /* AppDelegate.swift */,
 				8389126B1F728FDB004E29F2 /* ViewController.swift */,
 				8389126D1F728FDB004E29F2 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				8389128B1F728FDB004E29F2 /* Info.plist */,
 			);
 			path = AlertViewControllerWithImageUITests;
+			sourceTree = "<group>";
+		};
+		838912991F7292E9004E29F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				838912971F729040004E29F2 /* UIImage+Resize.swift */,
+				8389129A1F7292FC004E29F2 /* AlertController+Image.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8389126C1F728FDB004E29F2 /* ViewController.swift in Sources */,
+				8389129B1F7292FC004E29F2 /* AlertController+Image.swift in Sources */,
 				8389126A1F728FDB004E29F2 /* AppDelegate.swift in Sources */,
+				838912981F729040004E29F2 /* UIImage+Resize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

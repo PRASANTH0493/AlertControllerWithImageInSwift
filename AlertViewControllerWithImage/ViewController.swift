@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func alertButtonAction(_ sender: Any) {
+        let alertController = UIAlertController(title: "AirDrop", message: "would like to share Photo", preferredStyle: .alert)
+        
+        let image = UIImage(named:"Prasanth")
+        alertController.addImage(image: image!)
+        alertController.addAction(UIAlertAction(title: "Decline", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Accept", style: .default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
 
 }
 
